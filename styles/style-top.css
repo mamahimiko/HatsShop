@@ -1,0 +1,120 @@
+.main-container {
+  padding-top: 50px;
+}
+
+.top-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.top-image-menu {
+  position: relative;
+}
+
+.top-image-menu p {
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-image {
+  height: 800px;
+  width: 530px;
+  border-radius: 10px;
+}
+
+.top-image-menu.women:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.topimage-link.women:hover{
+  color: aliceblue;
+  transition: 0.5s;
+}
+
+.topimage-link.men {
+  color: aliceblue;
+}
+
+.top-image-menu.men:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.topimage-link.men:hover{
+  color: black;
+  transition: 0.5s;
+}
+
+.content {
+  padding-bottom: 100px;
+}
+
+.top-thmbnail {
+  padding: 30px 20%;
+  text-align: center;
+}
+.top-thmbnail h2 {
+  font-size: 2rem;
+}
+
+.thmbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.thmbnail-card {
+  background-color: white;
+  width: 100%;
+}
+
+.product-info {
+  padding: 10px;
+  text-align: start;
+}
+
+.thmbnail-card p {
+  margin: 5px;
+}
+
+.thmbnail {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .top-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .top-thmbnail {
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .thmbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+    padding: 16px;
+  }
+
+
+}

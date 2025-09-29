@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/style-contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Happy Hats</title>
+</head>
+<body>
+    <div class="upper-bar">
+        <p>Enjoy Free Shipping Worldwide for orders 499 sek!</p>
+    </div>
+    <header class="header"> 
+        <a href="file:///Users/mikamimaho/25frontendProgramming/assigment1/happy_hats.html">
+            <img src="img/header-logo.png" alt="Happy hats" class="header-logo">
+        </a>
+    </header>
+    <nav class="nav-bar">
+        <input id="menu-toggle" type="checkbox" class="menu-toggle"/>
+        <label for="menu-toggle" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="menu-container">
+        <ul class="menu">
+            <li>
+                <a href="women-category.html" class="gender">Women</a>
+                <div class="dropdown">
+                    <ul class="dropdown-contents">
+                      <li><a href="#">Beanies</a></li>
+                      <li><a href="#">Hats</a></li>
+                      <li><a href="#">Caps</a></li>
+                      <li><a href="#">Bucket hats</a></li>
+                      <li><a href="#">Straw hats</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="" class="gender">Men</a>
+                <div class="dropdown">
+                    <ul class="dropdown-contents">
+                      <li><a href="#">Beanies</a></li>
+                      <li><a href="#">Hats</a></li>
+                      <li><a href="#">Caps</a></li>
+                      <li><a href="#">Bucket hats</a></li>
+                      <li><a href="#">Straw hats</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        </div>
+        <ul class="user-menu">
+            <li><a href="mypage.html"><i class="fa-solid fa-circle-user"></i></a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+
+        </sidebar>
+        <section class="main-container">
+
+            <h1 class="contact_title">Contact Us</h1>
+
+            <div class="contact_discription">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt modi molestias consequuntur excepturi, possimus, eos deleniti perferendis quo eligendi sequi at doloribus quasi facilis dolore, harum corporis dolorum sit inventore?</p>
+            </div>
+            <form action="mailto: someone@gmail.com" method="POST" enctype="text/plain" class="user-information" required>
+                <div class="contact-field">
+                    <div class="form-group">
+                        <label for="full-name">Full Name <span class="requaired">*</span></label>
+                        <input  type="text" id="fullname" name="full-name" value="Your Full Name" class="user-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="full-name">Email <span class="requaired">*</span></label>
+                        <input  type="text" id="email" name="email" value="Your Email adress" class="user-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone nummber </label>
+                        <input  type="text" id="phone" name="phone" value="Your phone nummber" class="user-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="full-name">Country <span class="requaired">*</span></label>
+                        <input  type="text" id="country" name="country" value="Your country" class="user-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Subject">Subject <span class="requaired">*</span></label>
+                        <select name="subject" id="subject" placeholder="Order status"  class="user-input" required>
+                            <option disabled>Choose a country</option>
+                            <option value="Order status">Order status</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Report and issue">Report and issue</option>
+                            <option value="Return">Return</option>
+                            <option value="Request refund or discount">Request refund or discount</option>
+                            <option value="Product question">Product question</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Subject">Message <span class="requaired">*</span></label>
+                        <textarea name="description" id="description" class="user-input textarea" required></textarea>
+                    </div>
+                    <input type="file" />
+                </div>
+                <div class="submit">
+                    <input type='submit' value="Send">
+                </div>
+                
+            </form>
+
+        </section>
+        
+    </div>
+    <footer class="footer">
+        <div class="footer-menu">
+            <div class="logo-mail-magazine">
+                <img src="img/footer-logo.png" alt="Happy hats" class="footer-logo">
+                <p class="adress">Hammarby Fabriksväg 61 120 30 Stockholm</p>
+                <div class="mail-magazine">
+                    <p>Follow us and get 10% off offer!</p>
+                    <form>
+                        <input type="text" class="subscribe"  name="subscribe" id="subscribe" placeholder="Enter your address"/>
+                        <button class="btn-subscribe">Submit!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="about">
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="https://www.linkedin.com/">Careerr</a></li>
+                    <li><a href="#">Our Shop</a></li>
+                </ul>
+            </div>
+            <div class="customer-services">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms and conditions</a></li>
+                </ul>
+            </div>
+            <div class="sns">
+                <div class="sns-icons">
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; Happy Hats ltd.</p>
+        </div>
+    </footer>
+</body>
+</html>

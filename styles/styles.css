@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+a,
+a:link,
+a:visited {
+  color: #1c352d;
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  background-color: #a6b28b;
+  text-align: center;
+  padding: 0 24px;
+}
+.header {
+  padding: 20px;
+
+}
+
+.header-logo {
+  margin: 0;
+  width: 200px;
+  height: auto;
+}
+
+.upper-bar {
+  background-color: #1c352d;
+  margin: 0;
+  text-align: center;
+
+  p {
+    color: #f9f6f3;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  background-color: #fffafa;
+  border-bottom: 1px solid rgb(173, 172, 172);
+  justify-content: space-around;
+  font-size: 1rem;
+  margin: 0;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 2rem;
+    color: #83818c;
+    position: relative;
+  }
+
+  li:before {
+    content: "";
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  li:hover:before {
+    transform: scaleX(1);
+  }
+
+  li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+
+  }
+
+}
+
+.menu-container {
+  display: flex;
+}
+
+.menu-toggle,
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.gender {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.dropdown ul li {
+  color: black;
+  padding: 12px 16px;
+}
+
+.dropdown ul li:hover {
+  background-color: #f1f1f1;
+}
+
+li:hover .dropdown {
+  display: block;
+}
+
+.menu-container li {
+  padding: 5px 24px;
+}
+
+.user-menu li {
+  padding: 8px 12px;
+}
+
+.main {
+  flex-grow: 1;
+  background-color: #f9f6f3;
+}
+
+.footer {
+  padding-top: 40px;
+}
+
+.footer-menu {
+  display: grid;
+  grid-template: repeat(auto-fit, 300px) / 50% 1fr 1fr 1fr;
+}
+
+.logo-mail-magazine {
+  padding: 16px;
+
+
+}
+
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+}
+
+.adress {
+  margin-bottom: 24px;
+}
+
+.mail-magazine p {
+  font-weight: bold;
+}
+
+.subscribe {
+  width: 40%;
+  height: 40px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.btn-subscribe {
+  margin: 0;
+  height: 40px;
+  border: none;
+  padding: 10px 30px;
+  background-color: #1c352d ;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+
+.btn-subscribe:hover {
+  color: #fff;
+  opacity: 0.8;
+
+}
+
+
+.customer-services,
+.about,
+.sns {
+  text-align: start;
+  font-size: 0.9rem;
+
+  li {
+    padding-bottom: 10px;
+  }
+}
+
+.sns {
+  
+  align-items: end;
+
+  ul {
+    display: flex;
+  }
+
+
+}
+
+
+
+  .fa-brands {
+    font-size: 1.5rem;
+    padding-right: 24px;
+  }
+
+.copy {
+  height: 68px;
+  padding: 20px;
+
+  p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.sidebar {
+  .category-menu {
+    padding: 36px;
+  }
+
+  li {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .sidebar {
+    .category-menu {
+      padding: 12px;
+    }
+  
+    li {
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+  }
+
+
+  .nav-bar {
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  .menu-container {
+    display: none;
+    flex-direction: column;
+    background-color: #fffafa;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: none; 
+  }
+
+  .hamburger {
+    display: block; 
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  #menu-toggle:checked ~ .menu-container {
+    display: flex;
+  }
+
+  .menu {
+    display: flex; 
+    flex-direction: column; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .gender {
+    font-weight: bold;
+  }
+
+  .dropdown {
+    position: static;
+    display: block; 
+    background-color: transparent;
+    box-shadow: none;
+    min-width: 0;
+
+    ul li {
+      padding: 5px;
+    }
+  }
+
+  .dropdown-contents li {
+    padding-left: 1rem;
+    
+  }
+
+
+  .footer-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "logo-mail-area logo-mail-area"
+    "logo-mail-area logo-mail-area"
+    ".  ."
+    "sns sns";
+
+  }
+
+  .logo-mail-magazine{
+    grid-area: logo-mail-area;
+  }
+
+  .sns {
+    grid-area: sns;
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 0;
+    }
+  }
+
+  .subscribe {
+    width: 100%;
+  }
+
+  .btn-subscribe {
+    margin: 10px;
+
+  }
+
+
+  
+}

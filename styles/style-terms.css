@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.main-container {
+  width: 65%;
+  padding-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+.area {
+  background-color: white;
+  margin: 36px 0;
+  padding: 20px;
+}
+
+article {
+  padding: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+}
